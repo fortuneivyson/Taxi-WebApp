@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8">
+		<meta name = "format-detection" content = "telephone=no" />
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="booking/css/booking.css">
+		<link rel="stylesheet" href="css/camera.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.2.1.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.mobilemenu.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/owl.carousel.js"></script>
+		<script src="js/camera.js"></script>
+		<!--[if (gt IE 9)|!(IE)]><!-->
+		<script src="js/jquery.mobile.customized.min.js"></script>
+		<!--<![endif]-->
+		<script src="booking/js/booking.js"></script>
+
+		 
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
+		<script>
+			$(document).ready(function(){
+				jQuery('#camera_wrap').camera({
+					loader: false,
+					pagination: false ,
+					minHeight: '444',
+					thumbnails: false,
+					height: '28.28125%',
+					caption: true,
+					navigation: true,
+					fx: 'mosaic'
+				});
+				$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+		<!--[if lt IE 8]>
+			<div style=' clear: both; text-align:center; position: relative;'>
+				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+					<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+				</a>
+			</div>
+			<![endif]-->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<link rel="stylesheet" media="screen" href="css/ie.css">
+		<![endif]-->
+	</head>
+	<body class="page1" id="top" onload="displayUserInfo(),loadPhone()">
+		<div class="main">
+<!--==============================header=================================-->
+			<header>
+				<div class="menu_block ">
+					<div class="container_12">
+						<div class="grid_12">
+							<nav class="horizontal-nav full-width horizontalNav-notprocessed">
+								<ul class="sf-menu">
+									<li class="current"><a href="index.html">Home</a></li>
+									
+									<li><a href="myprofile.html">My Profile</a></li>
+									<li><a href="mytrips.html">My Trips</a></li>
+									<li><a href="" onclick="signout()">Log Out</a></li>
+									
+								</ul>
+							</nav>
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					
+				</div>
+				
+				<div class="container_12">
+					<div style="margin-top:30px;">
+					<h2 style="font-size: 25px;"><span id="greet"> </span> <span id="uname1"></span></h2>
+				</div>
+					<div class="grid_12">
+						
+						<h1>
+							
+							<a href="index.html">
+								<img src="images/logo.png" title="Book Taxi" alt="Your Happy Family">
+							</a>
+						</h1>
+						<div style="position:relative;justify-content:center;align-items:center;text-align:center; margin-bottom:20px; ">
+						<button data-toggle="modal"  data-target="#signupmodal" class="btn btn-secondary" style="cursor:pointer">Click Here To Make A Booking</button>
+					</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</header>
+			<div class="slider_wrapper ">
+				<div id="camera_wrap" class="">
+					<div data-src="images/sesfikile1.jpg" ></div>
+					<div data-src="images/sesfikile2.jpg" ></div>
+					<div data-src="images/sesfikile3.jpg"></div>
+				</div>
+			</div>
+			<div class="container_12">
+				<div class="grid_4">
+					<div class="banner">
+						<div class="maxheight">
+							<div class="banner_title">
+								<img src="images/icon1.png" alt="">
+								<div class="extra_wrapper">Fast&amp;
+									<div class="color1">Safe</div>
+								</div>
+							</div>
+							We Don't Take long to get to you. We don't take long to get to your destination. Our Commuters' safety is our number 1 priority
+							<a href="#" class="fa fa-share-square"></a>
+						</div>
+					</div>
+				</div>
+				<div class="grid_4">
+					<div class="banner">
+						<div class="maxheight">
+							<div class="banner_title">
+								<img src="images/icon2.png" alt="">
+								<div class="extra_wrapper">Best
+									<div class="color1">Prices</div>
+								</div>
+							</div>
+							Our prices are very affordable.
+							<a href="#" class="fa fa-share-square"></a>
+						</div>
+					</div>
+				</div>
+				<div class="grid_4">
+					<div class="banner">
+						<div class="maxheight">
+							<div class="banner_title">
+								<img src="images/icon3.png" alt="">
+								<div class="extra_wrapper">Luggage
+									<div class="color1">Safety</div>
+								</div>
+							</div>
+							Ensure your luggages are near you inside the taxi, we wont be held accountable for any loss of items.
+							<a href="#" class="fa fa-share-square"></a>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+<!--==============================Content=================================-->
+			<div class="content"><div class="ic"></div>
+				
+			</div>
+		</div>
+
+		 <!-- The Modal -->
+		 <div class="modal fade" id="signupmodal" role="dialog" data-keyboard="false" data-backdrop="static" >
+			<div class="modal-dialog">
+			  <div class="modal-content">
+			  
+				<!-- Modal Header -->
+				<div class="modal-header">
+				  <h2 class="modal-title">Make Booking</h2>
+				  
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				
+				<!-- Modal body -->
+				<div class="modal-body">
+					<div>
+						<div class="">
+		
+							
+							  <div class="">
+								<label for="timetrip">Select Time For Your Trip</label>
+								<select name="" id="timetrip" class="form-control">
+									<option value="7h00-8h00">7h00-8h00</option>
+									<option value="8h00-9h00">8h00-9h00</option>
+									<option value="9h00-10h00">9h00-10h00</option>
+									<option value="10h00-11h00">10h00-11h00</option>
+									<option value="11h00-12h00">11h00-12h00</option>
+									<option value="11h00-12h00">12h00-13h00</option>
+									<option value="11h00-12h00">13h00-14h00</option>
+								</select>
+							  </div>
+		
+						  <div class="">
+						   <label for="departure">Taxi From/To</label>
+						   
+						   <select name="" class="form-control" onchange="myFunction(event),availTaxis()" id="departure">
+							<option value="">Choose Departure/Destination</option>
+							
+
+							<option value="Nelspruit-Pretoria CBD">Nelspruit-Pretoria CBD</option>
+							<option value="Pretoria-Polokwane">Pretoria-Polokwane</option>
+							<option value="Nelspruit-Johhannesburg CBD">Nelspruit-Johhannesburg CBD</option>
+							<option value="Polokwane-Johannesburg">Polokwane-Johannesburg</option>
+							<option value="Durban-Pretoria">Durban-Pretoria</option>
+							
+							<option value="Tembisa-Sandton">Tembisa-Sandton</option>
+							<option value="Tembisa-Vosloorus">Tembisa-Vosloorus</option>
+							<option value="Vosloorus-Tembisa">Vosloorus-Tembisa</option>
+							<option value="Tembisa-Johannesburg CBD">Tembisa-Johannesburg CBD</option>
+							<option value="Johannesburg CBD-Tembisa">Johannesburg CBD-Tembisa</option>
+							<option value="Johannesburg CBD - Pretoria CBD">Johannesburg CBD - Pretoria CBD</option>
+							<option value="Pretoria CBD - Johannesburg CBD"> Pretoria CBD - Johannesburg CBD</option>
+							<option value="Johannesburg CBD - Boksburg">Johannesburg CBD - Boksburg</option>
+							
+							<option value="Johannesburg CBD-Alexandra">Johannesburg CBD-Alexandra</option>
+							
+							<option value="Boksburg-Randburg">Boksburg-Randburg</option>
+							
+							<option value="Randburg-Midrand">Randburg-Midrand</option>
+							<option value="Midrand-Randburg">Midrand-Randburg</option>
+						</select>
+						<label for="">Available Taxis</label>
+						<select name="" class="form-control" id="availableTaxis"  >
+							<option value=""></option>
+						</select>
+
+						<div class="" style="margin-bottom: 20px;">
+							<label for="taxiFare">Taxi Fare</label>
+							
+							 <input type="text" class="form-control" value="R0" id="taxiFare" disabled>
+						   </div>
+
+						   <div class="" style="margin-bottom: 20px;">
+							<label for="numPersons">Number of Commuters</label>
+							
+							 <input min="1" max="14" value="1" onchange="calcTot()" id="numPersons" class="uk-table-shrink uk-text-small sty" type="number" name="" id="">
+						   </div>
+						   
+						  </div>
+						  <div class="">
+							<label for="pickup">Choose Your Pick Up Point</label>
+							<select name="" class="form-control" id="pickup">
+								
+								
+								
+							</select>
+						 
+						   </div>
+						   <div class="">
+							<label for="notes">Write any extra notes for the driver</label>
+							
+							<textarea name="" class="form-control" id="notes" cols="5" rows="3"></textarea>
+						 
+						   </div>
+						  
+						  <div class="" style="margin-bottom: 20px;">
+							<label for="phone">Your Phone Number</label>
+							
+							 <input type="text" class="form-control" id="phone" >
+						   </div>
+						   <div class="" style="margin-bottom: 20px;">
+							<label for="phone">Next of Keen Name</label>
+							
+							 <input type="text" class="form-control" id="nextname" >
+						   </div>
+						   <div class="" style="margin-bottom: 20px;">
+							<label for="phone">Next of Keen Phone Number</label>
+							
+							 <input type="text" class="form-control" id="nextphone" >
+						   </div>
+
+						   <div class="mb-4">
+							<h4 class="font-weight-semi-bold mb-4">Card Details</h4>
+							<div class="row">
+								
+		
+								
+								<div class="col-md-6 form-group">
+									<label>Name On Card</label>
+									<input class="form-control" name="unameCard" type="text" id="namecard" >
+								</div>
+								<div class="col-md-6 form-group">
+									<label>Card Number</label>
+									<input class="form-control" type="text" id="cardno" maxlength="16"  onkeypress="javascript:return isNumber(event)" >
+								</div>
+								<div class="col-md-6 form-group" >
+									<label>Expiration Date</label><br>
+								   
+									<input class="form-control" id="expiration-date" maxlength='5' placeholder="MM/YY" type="text" onkeyup="formatString(event);">
+								</div>
+								<div class="col-md-6 form-group">
+									<label for="cvv" >CVV</label>
+									<input type="text" maxlength="4" class="form-control" id="cvv" onkeypress="javascript:return isNumber(event)">
+								</div>
+								
+								
+							</div>
+						</div>
+			  
+				   
+				   
+						</div>
+						<div class="card-footer border-secondary bg-transparent">
+							<div class="d-flex justify-content-between mt-2">
+								<h5 class="font-weight-bold">Total Trip Fare</h5>
+								<h5 class="font-weight-bold" >R <span id="check-amt"></span></h5>
+							</div>
+						</div>
+		
+			   
+					 </div>
+				</div>
+				
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					
+				  
+						
+				</div>
+				<div style="position: relative;display: flex; left: 70%;margin-bottom: 10px;">
+				<button type="submit" class="btn btn-primary" onclick="preBook()">Confirm Booking</button>
+			</div>
+				
+			  </div>
+			</div>
+		  </div>
+		
+		  <!-- end of Modal-->
+		<script>
+			function calcTot()
+			{
+				var price = document.getElementById("taxiFare").value
+				var numberOfP =document.getElementById("numPersons").value
+				price = price.slice(1)
+
+				var tot = parseInt(price)*parseInt(numberOfP)
+				document.getElementById("check-amt").innerHTML=tot.toString()
+			}
+		</script>
+
+		<script type="text/javascript">
+         
+			var day = new Date();
+			var hr = day.getHours();
+			if (hr >= 0 && hr < 12) {
+				document.getElementById("greet").innerHTML="Good Morning ☕,";
+			
+			} else if (hr >= 12 && hr <= 17) {
+			   
+				document.getElementById("greet").innerHTML="Good Afternoon ⛅ ,";
+			} else {
+				
+				document.getElementById("greet").innerHTML="Good Evening 🌚 ,";
+			}
+			
+		 </script>
+	
+	<script>
+	function myFunction(e) {
+
+		if(e.target.value=="Nelspruit-Pretoria CBD")
+		{
+
+		document.getElementById("taxiFare").value = "R320"
+		document.getElementById("check-amt").innerHTML="320"
+		document.getElementById("numPersons").value="1"
+
+		while ((document.getElementById('pickup')).options.length > 0) {
+        		(document.getElementById('pickup').remove(0));
+    			}
+
+		
+				var pickUpSelect = document.getElementById('pickup');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('--Please Select Pick Up Point--', '');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Total Steiltes Nelspruit(c/o Shuttle Street & Aurora Street Steiltes, Mbombela, 1201)', 'c/o Shuttle Street & Aurora Street Steiltes, Mbombela, 1201');
+ 		pickUpSelect.options[pickUpSelect.options.length] = new Option('Rob Ferreira Hospital Gate(Sonheuwel, Mbombela, 1201)', 'Sonheuwel, Mbombela, 1201');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Food Lovers Market Nelspruit(Andrew St, 1201 Madiba Dr, Mbombela, 1201)', 'Andrew St, 1201 Madiba Dr, Mbombela, 1201');
+		
+		
+
+					
+		}
+		if(e.target.value=="Nelspruit-Johhannesburg CBD")
+		{
+
+		document.getElementById("taxiFare").value = "R360"
+		document.getElementById("check-amt").innerHTML="360"
+		document.getElementById("numPersons").value="1"
+
+		while ((document.getElementById('pickup')).options.length > 0) {
+        		(document.getElementById('pickup').remove(0));
+    			}
+
+		var pickUpSelect = document.getElementById('pickup');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('--Please Select Pick Up Point--', '');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Total Steiltes Nelspruit(c/o Shuttle Street & Aurora Street Steiltes, Mbombela, 1201)', 'c/o Shuttle Street & Aurora Street Steiltes, Mbombela, 1201');
+ 		pickUpSelect.options[pickUpSelect.options.length] = new Option('Rob Ferreira Hospital Gate(Sonheuwel, Mbombela, 1201)', 'Sonheuwel, Mbombela, 1201');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Food Lovers Market Nelspruit(Andrew St, 1201 Madiba Dr, Mbombela, 1201)', 'Andrew St, 1201 Madiba Dr, Mbombela, 1201');
+		
+		
+
+					
+		}
+		if(e.target.value=="Pretoria-Polokwane")
+		{
+
+		document.getElementById("taxiFare").value = "R300"
+		document.getElementById("check-amt").innerHTML="300"
+		document.getElementById("numPersons").value="1"
+
+		while ((document.getElementById('pickup')).options.length > 0) {
+        		(document.getElementById('pickup').remove(0));
+    			}
+
+		var pickUpSelect = document.getElementById('pickup');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('--Please Select Pick Up Point--', '');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Goldwagen Pretoria Gardens(491 Tuin St, Pretoria Gardens, Pretoria, 0082)', '491 Tuin St, Pretoria Gardens, Pretoria, 0082');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('D&H Auto Spares(1283 Van Der Hoff Rd, Booysens, Pretoria, 0082)', '1283 Van Der Hoff Rd, Booysens, Pretoria, 0082');
+		
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('SPAR SaveMor Van Der Hoff(1439 Albertina Sisulu Rd, Jeppestown, Johannesburg, 2043)', '1439 Albertina Sisulu Rd, Jeppestown, Johannesburg, 2043');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('CAROLINA USED AUTO SPARES(Malie St, Zandfontein 317-Jr, Pretoria, 0001)', 'Malie St, Zandfontein 317-Jr, Pretoria, 0001');
+
+
+
+					
+		}
+		if(e.target.value=="Polokwane-Johannesburg")
+		{
+
+		document.getElementById("taxiFare").value = "R280"
+		document.getElementById("check-amt").innerHTML="280"
+		document.getElementById("numPersons").value="1"
+
+		while ((document.getElementById('pickup')).options.length > 0) {
+        		(document.getElementById('pickup').remove(0));
+    			}
+
+		var pickUpSelect = document.getElementById('pickup');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('--Please Select Pick Up Point--', '');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Mediclinic Polokwane(48a Jorissen St, Polokwane Central, Polokwane, 0700)', '48a Jorissen St, Polokwane Central, Polokwane, 0700');
+ 		pickUpSelect.options[pickUpSelect.options.length] = new Option('Vodacom Shop Pietersburg(Shop 58C, Rentmeester Building, 58c Schoeman St, Polokwane, 0699)', 'Shop 58C, Rentmeester Building, 58c Schoeman St, Polokwane, 0699');
+		
+		 pickUpSelect.options[pickUpSelect.options.length] = new Option(' Engen Rissik Street Motors(43 Rissik St, Polokwane Central, Polokwane, 0699)', '43 Rissik St, Polokwane Central, Polokwane, 0699');
+
+					
+		}
+		if(e.target.value=="Durban-Pretoria")
+		{
+
+		document.getElementById("taxiFare").value = "R410"
+		document.getElementById("check-amt").innerHTML="410"
+		document.getElementById("numPersons").value="1"
+
+		while ((document.getElementById('pickup')).options.length > 0) {
+        		(document.getElementById('pickup').remove(0));
+    			}
+
+		var pickUpSelect = document.getElementById('pickup');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('--Please Select Pick Up Point--', '');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Life Entabeni Hospital(Lower Grnd flr, 148 Mazisi Kunene Rd, Berea, 4001)', 'Lower Grnd flr, 148 Mazisi Kunene Rd, Berea, 4001');
+ 		pickUpSelect.options[pickUpSelect.options.length] = new Option('uMthombo Street Children SA(4 Buxton Gardens, Umbilo, Durban, 4001)', '4 Buxton Gardens, Umbilo, Durban, 4001');
+	
+		
+
+					
+		}
+		
+//
+		
+		
+		if(e.target.value=="Tembisa-Sandton")
+		
+		{
+			document.getElementById("taxiFare").value = "R42"
+			document.getElementById("check-amt").innerHTML="42"
+			document.getElementById("numPersons").value="1"
+
+			while ((document.getElementById('pickup')).options.length > 0) {
+        		(document.getElementById('pickup').remove(0));
+    			}
+
+				var pickUpSelect = document.getElementById('pickup');
+				pickUpSelect.options[pickUpSelect.options.length] = new Option('--Please Select Pick Up Point--', '');
+ 		pickUpSelect.options[pickUpSelect.options.length] = new Option('151 Street', '151 Street');
+		 pickUpSelect.options[pickUpSelect.options.length] = new Option('Esselen Park Tembisa sixteenth street', 'Esselen Park Tembisa sixteenth street');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('SAPS Ivory Park Station', 'SAPS Ivory Park Station');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Angola Street Next To Pharmacy', 'Angola Street Next To Pharmacy');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Kanana Extension 5 Hlanganani Street', 'Kanana Extension 5 Hlanganani Street');
+
+		}
+
+		if(e.target.value=="Tembisa-Vosloorus")
+		
+		{
+			document.getElementById("taxiFare").value = "R24"
+			document.getElementById("check-amt").innerHTML="24"
+			document.getElementById("numPersons").value="1"
+
+			while ((document.getElementById('pickup')).options.length > 0) {
+        		(document.getElementById('pickup').remove(0));
+    			}
+
+				var pickUpSelect = document.getElementById('pickup');
+				pickUpSelect.options[pickUpSelect.options.length] = new Option('--Please Select Pick Up Point--', '');
+ 		pickUpSelect.options[pickUpSelect.options.length] = new Option('Evergreens the Fresh Market @ Kempton', 'Evergreens the Fresh Market @ Kempton');
+		 pickUpSelect.options[pickUpSelect.options.length] = new Option('Esselen Park Tembisa sixteenth street', 'Esselen Park Tembisa sixteenth street');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('SAPS Ivory Park Station', 'SAPS Ivory Park Station');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Clicks Pharmarcy - Shop 46 Thembisa Mall, Cnr Andrew Mapheto Drive & Bophelong Street, Tembisa, 1632', 'Shop 46 Thembisa Mall, Cnr Andrew Mapheto Drive & Bophelong Street, Tembisa, 1632');
+		
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('65 32nd St, Doornkloof, 0062(Altelekker Youth Camp)', '65 32nd St, Doornkloof, 0062');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Midstream Dr, Hill Boulevard, Midstream Estate, 1692', 'Midstream Dr, Hill Boulevard, Midstream Estate, 1692');
+
+		}
+
+		if(e.target.value=="Vosloorus-Tembisa")
+		
+		{
+			document.getElementById("taxiFare").value = "R22"
+			document.getElementById("check-amt").innerHTML="22"
+			document.getElementById("numPersons").value="1"
+
+			while ((document.getElementById('pickup')).options.length > 0) {
+        		(document.getElementById('pickup').remove(0));
+    			}
+
+				var pickUpSelect = document.getElementById('pickup');
+				pickUpSelect.options[pickUpSelect.options.length] = new Option('--Please Select Pick Up Point--', '');
+ 		pickUpSelect.options[pickUpSelect.options.length] = new Option('Vosloorus Ext 7 Bus Stop(Ikhetini St, Vosloorus Ext 7), Vosloorus, 1475', 'Ikhetini St, Vosloorus Ext 7, Vosloorus, 1475');
+		 pickUpSelect.options[pickUpSelect.options.length] = new Option('Spruitview Multi - Purpose Park (Ndobe Ave & Corner Mtetwa Street, Spruitview, Johannesburg, 1431)', 'Ndobe Ave & Corner Mtetwa Street, Spruitview, Johannesburg, 1431');
+
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Sontonga Mall (Corner Sontonga Street & AM Hlongwane Street, Ap Khumalo, Katlehong, 1431)', 'Corner Sontonga Street & AM Hlongwane Street, Ap Khumalo, Katlehong, 1431');
+		
+		}
+
+		if(e.target.value=="Tembisa-Johannesburg CBD")
+		
+		{
+			document.getElementById("taxiFare").value = "R35"
+			document.getElementById("check-amt").innerHTML="35"
+			document.getElementById("numPersons").value="1"
+
+			while ((document.getElementById('pickup')).options.length > 0) {
+        		(document.getElementById('pickup').remove(0));
+    			}
+
+				var pickUpSelect = document.getElementById('pickup');
+
+			pickUpSelect.options[pickUpSelect.options.length] = new Option('SAPS Ivory Park Station', 'SAPS Ivory Park Station');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Clicks Pharmarcy - Shop 46 Thembisa Mall, Cnr Andrew Mapheto Drive & Bophelong Street, Tembisa, 1632', 'Shop 46 Thembisa Mall, Cnr Andrew Mapheto Drive & Bophelong Street, Tembisa, 1632');
+		
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('65 32nd St, Doornkloof, 0062(Altelekker Youth Camp)', '65 32nd St, Doornkloof, 0062');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Midstream Dr, Hill Boulevard, Midstream Estate, 1692', 'Midstream Dr, Hill Boulevard, Midstream Estate, 1692');
+
+		}
+
+		if(e.target.value=="Johannesburg CBD-Tembisa")
+		{
+			document.getElementById("taxiFare").value = "R35"
+			document.getElementById("check-amt").innerHTML="35"
+			document.getElementById("numPersons").value="1"
+
+			while ((document.getElementById('pickup')).options.length > 0) {
+        		(document.getElementById('pickup').remove(0));
+    			}
+
+
+				var pickUpSelect = document.getElementById('pickup');
+			pickUpSelect.options[pickUpSelect.options.length] = new Option('Carlton Centre, 150 Commissioner St, Marshalltown, Johannesburg, 2000', 'Carlton Centre, 150 Commissioner St, Marshalltown, Johannesburg, 2000');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Kwa Mai Mai Traditional Market (14 Berea Rd, City and Suburban, Johannesburg, 2094)', '14 Berea Rd, City and Suburban, Johannesburg, 2094');
+		
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Saps Jeppe Police Station(1439 Albertina Sisulu Rd, Jeppestown, Johannesburg, 2043)', '1439 Albertina Sisulu Rd, Jeppestown, Johannesburg, 2043');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('SUPERSPAR Bertrams(Albertina Sisulu Rd, Bertrams, Johannesburg, 2094)', 'Albertina Sisulu Rd, Bertrams, Johannesburg, 2094');
+
+		}
+
+		if(e.target.value=="Johannesburg CBD - Pretoria CBD")
+		{
+			document.getElementById("taxiFare").value = "R45"
+			document.getElementById("check-amt").innerHTML="45"
+			document.getElementById("numPersons").value="1"
+
+			while ((document.getElementById('pickup')).options.length > 0) {
+        		(document.getElementById('pickup').remove(0));
+    			}
+
+
+				var pickUpSelect = document.getElementById('pickup');
+			pickUpSelect.options[pickUpSelect.options.length] = new Option('Ellis Park Stadium(S Park Ln, New Doornfontein, Johannesburg, 2094)', 'S Park Ln, New Doornfontein, Johannesburg, 2094');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('China City Wholesale Center Johannesburg (2 Dora St, New Doornfontein, Johannesburg, 2094)', '2 Dora St, New Doornfontein, Johannesburg, 2094');
+		
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Saps Jeppe Police Station(1439 Albertina Sisulu Rd, Jeppestown, Johannesburg, 2043)', '1439 Albertina Sisulu Rd, Jeppestown, Johannesburg, 2043');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('SUPERSPAR Bertrams(Albertina Sisulu Rd, Bertrams, Johannesburg, 2094)', 'Albertina Sisulu Rd, Bertrams, Johannesburg, 2094');
+
+		}
+
+		if(e.target.value=="Pretoria CBD - Johannesburg CBD")
+		
+		{
+			document.getElementById("taxiFare").value = "R45"
+			document.getElementById("check-amt").innerHTML="45"
+			document.getElementById("numPersons").value="1"
+
+			
+			var pickUpSelect = document.getElementById('pickup');
+			pickUpSelect.options[pickUpSelect.options.length] = new Option('Goldwagen Pretoria Gardens(491 Tuin St, Pretoria Gardens, Pretoria, 0082)', '491 Tuin St, Pretoria Gardens, Pretoria, 0082');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('D&H Auto Spares(1283 Van Der Hoff Rd, Booysens, Pretoria, 0082)', '1283 Van Der Hoff Rd, Booysens, Pretoria, 0082');
+		
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('SPAR SaveMor Van Der Hoff(1439 Albertina Sisulu Rd, Jeppestown, Johannesburg, 2043)', '1439 Albertina Sisulu Rd, Jeppestown, Johannesburg, 2043');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('CAROLINA USED AUTO SPARES(Malie St, Zandfontein 317-Jr, Pretoria, 0001)', 'Malie St, Zandfontein 317-Jr, Pretoria, 0001');
+
+
+			
+		}
+
+		if(e.target.value=="Johannesburg CBD - Boksburg")
+		
+		{
+			document.getElementById("taxiFare").value = "R38"
+			document.getElementById("check-amt").innerHTML="38"
+			document.getElementById("numPersons").value="1"
+
+			
+			var pickUpSelect = document.getElementById('pickup');
+			pickUpSelect.options[pickUpSelect.options.length] = new Option('Westview Security Estate(155 Johnson St, Andeon, Pretoria, 0001)', '155 Johnson St, Andeon, Pretoria, 0001');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Tshepo Botshelo family practice(EXT 39, Cnr Johnson and Kenneth street Andeon, Pretoria west, 0183)', 'EXT 39, Cnr Johnson and Kenneth street Andeon, Pretoria west, 0183');
+		
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Chelance Peacock Inn(71 John Du Toit Ave, Andeon AH, Pretoria, 1457)', '71 John Du Toit Ave, Andeon AH, Pretoria, 1457');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Zandfontein Storage Facility(50 Beverley St, Andeon AH, Pretoria)', '50 Beverley St, Andeon AH, Pretoria');
+
+		}
+
+	
+
+		if(e.target.value=="Johannesburg CBD-Alexandra")
+		
+		{
+			document.getElementById("taxiFare").value = "R18"
+			document.getElementById("check-amt").innerHTML="18"
+			document.getElementById("numPersons").value="1"
+
+			var pickUpSelect = document.getElementById('pickup');
+			pickUpSelect.options[pickUpSelect.options.length] = new Option('BluBird Shopping Centre(Park Road &, Atholl Oaklands Rd, Illovo, Sandton)', 'Park Road &, Atholl Oaklands Rd, Illovo, Sandton');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Saps Bramley Police Station( 234 Louis Botha Ave, Bramley, Johannesburg, 2090)', '234 Louis Botha Ave, Bramley, Johannesburg, 2090');
+		
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Ultra Liquors - Corlett(220/228 Louis Botha Ave &, Corlett Dr, Bramley, Johannesburg, 2090)', '220/228 Louis Botha Ave &, Corlett Dr, Bramley, Johannesburg, 2090');
+		
+
+			
+		}
+
+		if(e.target.value=="Randburg-Midrand")
+		
+		{
+			document.getElementById("taxiFare").value = "R16"
+			document.getElementById("check-amt").innerHTML="16"
+			document.getElementById("numPersons").value="1"
+
+			var pickUpSelect = document.getElementById('pickup');
+			pickUpSelect.options[pickUpSelect.options.length] = new Option('RANDBURG MALL(mosaïek, Danielle St, Randburg, 2030)', 'mosaïek, Danielle St, Randburg, 2030');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Fourways Mall(11 Ruby Cl, Witkoppen, Sandton, 2068)', '11 Ruby Cl, Witkoppen, Sandton, 2068');
+		
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Tourism Centre At Small Street(Small St, Newlands, Randburg, 2092)', 'Small St, Newlands, Randburg, 2092');
+		
+
+		}
+
+		if(e.target.value=="Boksburg-Randburg")
+	
+		{
+			document.getElementById("taxiFare").value = "R25"
+			document.getElementById("check-amt").innerHTML="25"
+			document.getElementById("numPersons").value="1"
+
+			var pickUpSelect = document.getElementById('pickup');
+			pickUpSelect.options[pickUpSelect.options.length] = new Option('Bezuidenhouts Building( Leeuwpoort 113-Ir, Boksburg, 1459)', 'Leeuwpoort 113-Ir, Boksburg, 1459');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Golden Oaks Complex(55 Pretoria Rd, Comet, Boksburg, 1459)', '55 Pretoria Rd, Comet, Boksburg, 1459');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Shoprite Satelite(and Streets, North, Paul Kruger St & 11th St, Boksburg)', 'and Streets, North, Paul Kruger St & 11th St, Boksburg');
+		
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Pebble Falls Lifestyle Estates(25 Graaff Ave, Comet, Boksburg, 1459)', '25 Graaff Ave, Comet, Boksburg, 1459');
+		
+		}
+
+		if(e.target.value=="Midrand-Randburg")
+		{
+			document.getElementById("taxiFare").value = "R14"
+			document.getElementById("check-amt").innerHTML="14"
+			document.getElementById("numPersons").value="1"
+
+			var pickUpSelect = document.getElementById('pickup');
+			pickUpSelect.options[pickUpSelect.options.length] = new Option('Kyalami Corner Shopping Centre( Corner Of R55 And, Main Rd, Witpoort (Beaulieu), Midrand, 1684)', 'Corner Of R55 And, Main Rd, Witpoort (Beaulieu), Midrand, 1684');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Colour Street Food(Republic Rd, Ebony Park, Midrand, 1685)', 'Republic Rd, Ebony Park, Midrand, 1685');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('Modderfontein Reserve( Arden Road, Off Ardeer Rd, Modderfontein, Lethabong, 1609)', 'Arden Road, Off Ardeer Rd, Modderfontein, Lethabong, 1609');
+		
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('42nd Street SA(1 Barlow Rd, Halfway House, Midrand, 2064)', '1 Barlow Rd, Halfway House, Midrand, 2064');
+		pickUpSelect.options[pickUpSelect.options.length] = new Option('High Street Auto(0B New Rd, Halfway House Estate, Midrand, 1685)', '0B New Rd, Halfway House Estate, Midrand, 1685');
+		
+		}
+
+	}
+</script>
+<script>
+     
+
+	var inputBox = document.getElementById("namecard");
+	
+	var invalidChars = [
+	  "-","+","`", "0","1","2","3","4","5","6","7","8","9",
+	  "!","#","@","*","&","^","(","_","=",")","]",
+	  "[","{","}","?","<",">",",",".",
+	  ,"/",":",";","|",
+	];
+	
+	inputBox.addEventListener("keydown", function(e) {
+	  if (invalidChars.includes(e.key)) {
+		e.preventDefault();
+		
+	  }
+	});
+		</script>
+	
+		<script>
+			function formatString(e) {
+	  var inputChar = String.fromCharCode(event.keyCode);
+	  var code = event.keyCode;
+	  var allowedKeys = [8];
+	  if (allowedKeys.indexOf(code) !== -1) {
+		return;
+	  }
+	
+	  event.target.value = event.target.value.replace(
+		/^([1-9]\/|[2-9])$/g, '0$1/' // 3 > 03/
+	  ).replace(
+		/^(0[1-9]|1[0-2])$/g, '$1/' // 11 > 11/
+	  ).replace(
+		/^([0-1])([3-9])$/g, '0$1/$2' // 13 > 01/3
+	  ).replace(
+		/^(0?[1-9]|1[0-2])([0-9]{2})$/g, '$1/$2' // 141 > 01/41
+	  ).replace(
+		/^([0]+)\/|[0]+$/g, '0' // 0/ > 0 and 00 > 0
+	  ).replace(
+		/[^\d\/]|^[\/]*$/g, '' // To allow only digits and `/`
+	  ).replace(
+		/\/\//g, '/' // Prevent entering more than 1 `/`
+	  );
+	}
+	
+		</script>
+	
+	<script >
+		function isNumber(evt)
+		  {
+			 var charCode = (evt.which) ? evt.which : event.keyCode
+			 if (charCode > 31 && (charCode < 48 || charCode > 57))
+				return false;
+	 
+			 return true;
+		  }
+		  
+	
+		  
+	
+	</script>
+	
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+
+<script>
+	// Import the functions you need from the SDKs you need
+	
+	// TODO: Add SDKs for Firebase products that you want to use
+	// https://firebase.google.com/docs/web/setup#available-libraries
+  
+	// Your web app's Firebase configuration
+	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	const firebaseConfig = {
+    apiKey: "AIzaSyDLGAOWqkk18qXGgxCv9XV6V0Er2BhqmPE",
+    authDomain: "taxirank-cbf3d.firebaseapp.com",
+    projectId: "taxirank-cbf3d",
+    storageBucket: "taxirank-cbf3d.appspot.com",
+    messagingSenderId: "425054451979",
+    appId: "1:425054451979:web:e6d759a6978edb87bb8a0e",
+    measurementId: "G-8YPY47PZFT"
+  };
+  
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+	const auth = firebase.auth();
+	const db = firebase.firestore();
+	db.settings({timestampsInSnapshots:true});
+	firebase.analytics();
+
+  </script>
+
+  
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init("Cw1iNHnR9jLrzxciG");
+})();
+</script>
+ 
+
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+<script src="js/displaygreet.js"></script>
+<script src="js/logout.js"></script>
+<script src="js/Bookings.js"></script>
+
+	</body>
+</html>

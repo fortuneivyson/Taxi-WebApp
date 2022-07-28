@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi Rank - Sign In</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
+</head>
+<body>
+    
+        <section class="login">
+            <div class="login_box">
+                <div class="left">
+                    
+                    <div class="contact">
+                        <div>
+                            <h3>SIGN IN</h3>
+                            <input type="text" id="username" placeholder="USERNAME" required>
+                            <input type="password" id="passw" placeholder="PASSWORD" required>
+                            <button class="submit" onclick="login()">LET'S GO</button><br>
+                            <span>Don't have an account yet?</span> <br>
+                            <a href="" data-toggle="modal"  data-target="#signupmodal">Sign Up</a>
+                            <span>OR</span>
+                            <a href="" data-toggle="modal"  data-target="#driverApply">Driver Application</a>
+                           
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right-text">
+                        <h2>TAXI RANK APP</h2>
+                        <h5>AN APP TO BOOK A TAXI TO YOUR LOCATION</h5>
+                    </div>
+                    <div class="right-inductor"><img src="img/SA-Taxi-Buy-a-Toyota-Quantum.png" alt="">
+            </div>
+
+          </section>
+          <!-- The Modal -->
+     <div class="modal fade" id="driverApply" role="dialog" data-keyboard="false" data-backdrop="static" >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Driver Application</h2>
+          
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div>
+            <div class="row">
+    
+               
+    
+              <div class="col-md-6">
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" id="fname" class="form-control" placeholder="First Name">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" id="lname" placeholder="Last Name" >
+                </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" id="d_email" class="form-control" placeholder="Email">
+              </div>
+          </div>
+
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" class="form-control" id="pw" placeholder="Set New Password" >
+              </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="form-group">
+                <label>Taxi Capacity</label>
+                <select name="" class="form-control" id="taxicapacity">
+                    <option value="14">14 seater</option>
+                    <option value="22">22 seater</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div class="col-md-12">
+          <div class="form-group">
+              <label>Taxi Registratration</label>
+              <input type="text" class="form-control" id="numplate" placeholder="Number Plate">
+          </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="form-group">
+            <label>Contact Number</label>
+            <input type="text" class="form-control" id="uphone" placeholder="Contact Number">
+        </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="form-group">
+          <label>Operating Cities/Townships</label>
+          <select name="" class="form-control" id="city">
+          <option value="Nelspruit-Pretoria CBD">Nelspruit-Pretoria CBD</option>
+          <option value="Pretoria-Polokwane">Pretoria-Polokwane</option>
+          <option value="Nelspruit-Johhannesburg CBD">Nelspruit-Johhannesburg CBD</option>
+          <option value="Polokwane-Johannesburg">Polokwane-Johannesburg</option>
+          <option value="Durban-Pretoria">Durban-Pretoria</option>
+          
+          <option value="Tembisa-Sandton">Tembisa-Sandton</option>
+          <option value="Tembisa-Vosloorus">Tembisa-Vosloorus</option>
+          <option value="Vosloorus-Tembisa">Vosloorus-Tembisa</option>
+          <option value="Tembisa-Johannesburg CBD">Tembisa-Johannesburg CBD</option>
+          <option value="Johannesburg CBD-Tembisa">Johannesburg CBD-Tembisa</option>
+          <option value="Johannesburg CBD - Pretoria CBD">Johannesburg CBD - Pretoria CBD</option>
+          <option value="Pretoria CBD - Johannesburg CBD"> Pretoria CBD - Johannesburg CBD</option>
+          <option value="Johannesburg CBD - Boksburg">Johannesburg CBD - Boksburg</option>
+          
+          <option value="Johannesburg CBD-Alexandra">Johannesburg CBD-Alexandra</option>
+          
+          <option value="Boksburg-Randburg">Boksburg-Randburg</option>
+          
+          <option value="Randburg-Midrand">Randburg-Midrand</option>
+          <option value="Midrand-Randburg">Midrand-Randburg</option>
+      </select>
+      </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="form-group">
+     <label for="time">Select Operating Time</label>
+    <select name="" id="time" class="form-control">
+        <option value="7h00-8h00">7h00-8h00</option>
+        <option value="8h00-9h00">8h00-9h00</option>
+        <option value="9h00-10h00">9h00-10h00</option>
+        <option value="10h00-11h00">10h00-11h00</option>
+        <option value="11h00-12h00">11h00-12h00</option>
+        <option value="11h00-12h00">12h00-13h00</option>
+        <option value="11h00-12h00">13h00-14h00</option>
+    </select>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="form-group">
+          <label>Country</label>
+          <input type="text" class="form-control" id="country" disabled value="South Africa">
+      </div>
+  </div>
+    
+            </div>
+    
+           </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          
+          
+            
+        </div>
+        <div >
+        <button type="submit" class="btn btn-primary" onclick="applyDriver()">Apply</button>
+      </div>
+        
+        </div>
+      </div>
+      </div>
+    
+      <!-- end of Modal-->
+            
+        </section>
+        <!-- The Modal -->
+	 <div class="modal fade" id="signupmodal" role="dialog" data-keyboard="false" data-backdrop="static" >
+		<div class="modal-dialog modal-xl">
+		  <div class="modal-content">
+		  
+			<!-- Modal Header -->
+			<div class="modal-header">
+			  <h2 class="modal-title">Sign Up</h2>
+			  <span>It's quick and easy.</span>
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			
+			<!-- Modal body -->
+			<div class="modal-body">
+				<div>
+					<div class="">
+	
+					   
+	
+						<div class="">
+							<label for="uname">Name</label>
+							<input type="text" class="form-control" id="uname" placeholder="John">
+						  </div>
+						  <div class="">
+							<label for="name">Surname</label>
+							<input type="text" class="form-control" id="sname" placeholder="Doe">
+						  </div>
+	
+					  <div class="">
+					   <label for="email">Email</label>
+					   
+						<input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+					  </div>
+					  <div class="" style="margin-bottom: 20px;">
+						<label for="phone">Phone Number</label>
+						
+						 <input type="text" class="form-control" id="phone" placeholder="071 234 5678">
+					   </div>
+					   <div class="" style="margin-bottom: 20px;">
+						<label for="idnumber">ID Number</label>
+						
+						 <input type="text" class="form-control" name="idnumber" id="idnumber" placeholder="13-Digit RSA ID Number">
+					   </div>
+					   <div class="" style="margin-bottom: 20px;">
+						<label for="phone">New Password</label>
+						
+						 <input type="password" class="form-control" id="pword" placeholder="Password">
+					   </div>
+	
+					  
+	
+					  <div class="" style="margin-bottom: 20px;">
+						<label for="gender">Gender</label>
+						
+						 <select class="form-control" name="" id="gender">
+							 <option value="">Choose Gender</option>
+							 <option value="Male">Male</option>
+							 <option value="Female">Female</option>
+						 </select>
+					   </div>
+
+                       <div class="" style="margin-bottom: 20px;">
+						<label for="gender">I am Signing Up as a</label>
+						
+						 <select class="form-control" name="" id="status">
+							 <option value="Commuter">Commuter</option>
+							
+						 </select>
+					   </div>
+			   
+			   
+					</div>
+	
+				 
+										
+						
+					
+						
+		   
+				 </div>
+			</div>
+			
+			<!-- Modal footer -->
+			<div class="modal-footer">
+				
+			  
+					
+			</div>
+			<div style="position: relative;display: flex; left: 80%;">
+			<button type="submit" class="btn btn-primary" onclick="signup()">Sign Up</button>
+		</div>
+			
+		  </div>
+		</div>
+	  </div>
+	
+	  <!-- end of Modal-->
+
+      
+      <!--get image to the preview div before actually uploading--> 
+    
+
+    
+
+
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    
+    <script>
+        // Import the functions you need from the SDKs you need
+        
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+    apiKey: "AIzaSyDLGAOWqkk18qXGgxCv9XV6V0Er2BhqmPE",
+    authDomain: "taxirank-cbf3d.firebaseapp.com",
+    projectId: "taxirank-cbf3d",
+    storageBucket: "taxirank-cbf3d.appspot.com",
+    messagingSenderId: "425054451979",
+    appId: "1:425054451979:web:e6d759a6978edb87bb8a0e",
+    measurementId: "G-8YPY47PZFT"
+  };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+        db.settings({timestampsInSnapshots:true});
+        firebase.analytics();
+    
+      </script>
+
+      <script src="js/login.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+
+    </body>
+
+        
+    </html>
